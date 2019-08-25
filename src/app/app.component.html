@@ -1,0 +1,17 @@
+<div style="text-align:left;width:500px;">
+  <h1>
+      {{ title }}!
+  </h1>
+
+  <table border='1' *ngIf="arrSample">
+      <!-- ADD HEADERS -->
+      <tr>
+          <th>ID</th>
+              <th>Name </th>           
+      </tr>
+      <tr *ngFor="let Stud of arrSample">
+          <td>{{Stud.ID}}</td>
+              <td>{{Stud.Name}}</td>
+      </tr>
+  </table>
+</div>
